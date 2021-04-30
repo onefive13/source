@@ -15,6 +15,9 @@
 
 まず、シミュレーションする系に含まれる分子であるアルコール分子の構造を作成する。 簡単な分子構造を作成し、構造ファイルを書き出すには**CHARMM-GUI**が便利である。 CHARMM-GUIはWeb上で動くプログラムであり、PDBファイルの作成からシミュレーションのインプットファイルの作成まで、多くの便利な機能が備わっている。
 
+``` caution:: 最近のアップデートにより、CHARMM-GUIの利用にはメールアドレスとパスワードによるログインが必要となった。アカウント作成ページで名前・所属機関・メールアドレスの登録をして利用しよう。
+```
+
 <img src="https://shalad2.github.io/JellyPage/gromacs/images/charmm_gui_top.png" width=80%>
 
 今回は[CHARMM-GUIのトップページ](http://www.charmm-gui.org/)から「Input Generator」を選択し、その中の「Ligand Reader and Modeler」を利用する。 一番下までスクロールすると、次のような画面が現れるはずである。
