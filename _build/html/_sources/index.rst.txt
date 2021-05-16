@@ -18,3 +18,4 @@ Welcome to bros.'s documentation!
    /SPHINX/sphinx2.md
    /SPHINX/sphinx3.md
    /SPHINX/sphinx4.md
+   /TEST/test.md
