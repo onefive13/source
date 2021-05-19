@@ -27,7 +27,7 @@ Resolving deltas: 100% (36/36), done.
 ```
 $ ls
 source
-$ cd source/ $$ ls
+$ cd source/ && ls
 GROMACS  Makefile  SPHINX  _build  _static  conf.py  index.rst  make.bat
 ```
 
