@@ -40,8 +40,8 @@
     
     <link rel="index" title="索引" href="../genindex.html" />
     <link rel="search" title="検索" href="../search.html" />
-    <link rel="next" title="1. 系の作成" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.1.html" />
-    <link rel="prev" title="5.【補足】mdpファイルの詳細" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB1.5.html" /> 
+    <link rel="next" title="1. 系の作成" href="GROMACStutorial2.1.html" />
+    <link rel="prev" title="5.【補足】mdpファイルの詳細" href="GROMACStutorial1.5.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -88,22 +88,20 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="GROMACS%E3%81%AE%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB.html">GROMACSのインストール</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GROMACSinstall.html">GROMACSのインストール</a></li>
 <li class="toctree-l1"><a class="reference internal" href="GROMACSindex1.html">GROMACSチュートリアル1</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">GROMACSチュートリアル2</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#id1">目次</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.1.html">1. 系の作成</a></li>
-<li class="toctree-l3"><a class="reference internal" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.2.html">2. 力場パラメータとトポロジーの準備</a></li>
-<li class="toctree-l3"><a class="reference internal" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.3.html">3. mdpファイルの作成とシミュレーションの実行</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GROMACStutorial2.1.html">1. 系の作成</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GROMACStutorial2.2.html">2. 力場パラメータとトポロジーの準備</a></li>
+<li class="toctree-l3"><a class="reference internal" href="GROMACStutorial2.3.html">3. mdpファイルの作成とシミュレーションの実行</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="GROMACSmdp%E3%82%AA%E3%83%97%E3%82%B7%E3%83%A7%E3%83%B3.html">GROMACS.mdpオプション</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../SPHINX/sphinx1.html">Sphinxの使い方その1</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../SPHINX/sphinx2.html">Sphinxの使い方その2</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../SPHINX/sphinx3.html">Sphinxの使い方その3</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../SPHINX/sphinx4.html">Sphinxの使い方その4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GROMACSmdp.html">GROMACS.mdpオプション</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../SPHINX/sphinxindex.html">Sphinxの使い方</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GIT/gitindex.html">Gitの使い方</a></li>
 </ul>
 
             
@@ -181,24 +179,24 @@
 <p>このチュートリアルの目標は、MDシミュレーションに必要となる構造ファイルを一から作成し、mdpファイルの設定してシミュレーションをコントロールすることである。 目的の系を作成する方法、シミュレーションを制御する方法を学び、自由にシミュレーションができるようになろう。</p>
 <div class="toctree-wrapper compound">
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.1.html">1. 系の作成</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.1.html#charmm-gui">アルコール分子の作成（CHARMM-GUI）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.1.html#id2">アルコール二重膜系の作成</a></li>
-<li class="toctree-l2"><a class="reference internal" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.1.html#id3">まとめ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GROMACStutorial2.1.html">1. 系の作成</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="GROMACStutorial2.1.html#charmm-gui">アルコール分子の作成（CHARMM-GUI）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GROMACStutorial2.1.html#id2">アルコール二重膜系の作成</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GROMACStutorial2.1.html#id3">まとめ</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.2.html">2. 力場パラメータとトポロジーの準備</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.2.html#charmm">CHARMM力場のダウンロード</a></li>
-<li class="toctree-l2"><a class="reference internal" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.2.html#gro">構造ファイル（groファイル）の作成</a></li>
-<li class="toctree-l2"><a class="reference internal" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.2.html#id3">まとめ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GROMACStutorial2.2.html">2. 力場パラメータとトポロジーの準備</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="GROMACStutorial2.2.html#charmm">CHARMM力場のダウンロード</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GROMACStutorial2.2.html#gro">構造ファイル（groファイル）の作成</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GROMACStutorial2.2.html#id3">まとめ</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.3.html">3. mdpファイルの作成とシミュレーションの実行</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.3.html#em">エネルギー最小化（00_em）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.3.html#nvt-01-nvt">NVT平衡化（01_nvt）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.3.html#npt-02-npt">NPT平衡化（02_npt）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.3.html#npt">本計算（03_npt）</a></li>
-<li class="toctree-l2"><a class="reference internal" href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.3.html#id1">まとめ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="GROMACStutorial2.3.html">3. mdpファイルの作成とシミュレーションの実行</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="GROMACStutorial2.3.html#em">エネルギー最小化（00_em）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GROMACStutorial2.3.html#nvt-01-nvt">NVT平衡化（01_nvt）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GROMACStutorial2.3.html#npt-02-npt">NPT平衡化（02_npt）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GROMACStutorial2.3.html#npt">本計算（03_npt）</a></li>
+<li class="toctree-l2"><a class="reference internal" href="GROMACStutorial2.3.html#id1">まとめ</a></li>
 </ul>
 </li>
 </ul>
@@ -213,8 +211,8 @@
           </div>
           <footer>
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB2.1.html" class="btn btn-neutral float-right" title="1. 系の作成" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
-        <a href="GROMACS%E3%83%81%E3%83%A5%E3%83%BC%E3%83%88%E3%83%AA%E3%82%A2%E3%83%AB1.5.html" class="btn btn-neutral float-left" title="5.【補足】mdpファイルの詳細" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="GROMACStutorial2.1.html" class="btn btn-neutral float-right" title="1. 系の作成" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="GROMACStutorial1.5.html" class="btn btn-neutral float-left" title="5.【補足】mdpファイルの詳細" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
     </div>
 
   <hr/>

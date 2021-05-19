@@ -18,9 +18,9 @@ GROMACSチュートリアル2
 .. toctree::
    :maxdepth: 2
 
-   /GROMACS/GROMACSチュートリアル2.1.md
-   /GROMACS/GROMACSチュートリアル2.2.md
-   /GROMACS/GROMACSチュートリアル2.3.md
+   /GROMACS/GROMACStutorial2.1.md
+   /GROMACS/GROMACStutorial2.2.md
+   /GROMACS/GROMACStutorial2.3.md
 
 
 

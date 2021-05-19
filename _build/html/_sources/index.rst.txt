@@ -10,11 +10,10 @@ Welcome to bros.'s documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   /GROMACS/GROMACSのインストール.md
+   /GROMACS/GROMACSinstall.md
    /GROMACS/GROMACSindex1.rst
    /GROMACS/GROMACSindex2.rst
-   /GROMACS/GROMACSmdpオプション.md
-   /SPHINX/sphinx1.md
-   /SPHINX/sphinx2.md
-   /SPHINX/sphinx3.md
-   /SPHINX/sphinx4.md
+   /GROMACS/GROMACSmdp.md
+   /SPHINX/sphinxindex.rst
+   /GIT/gitindex.rst
+   
