@@ -18,11 +18,11 @@ GROMACSチュートリアル1
 .. toctree::
    :maxdepth: 2
 
-   /GROMACS/GROMACSチュートリアル1.1.md
-   /GROMACS/GROMACSチュートリアル1.2.md
-   /GROMACS/GROMACSチュートリアル1.3.md
-   /GROMACS/GROMACSチュートリアル1.4.md
-   /GROMACS/GROMACSチュートリアル1.5.md
+   /GROMACS/GROMACStutorial1.1.md
+   /GROMACS/GROMACStutorial1.2.md
+   /GROMACS/GROMACStutorial1.3.md
+   /GROMACS/GROMACStutorial1.4.md
+   /GROMACS/GROMACStutorial1.5.md
    
 
 なお、本チュートリアルの内容は「GROMACS Tutorial1: Lysozyme in Water」を参考にしている。 初学者向けに全体の流れを重視しているため、詳細は `英語版のページ <http://www.mdtutorials.com/gmx/lysozyme/index.html>`_ を参照してほしい。
