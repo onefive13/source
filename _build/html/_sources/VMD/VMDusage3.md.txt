@@ -12,17 +12,26 @@
 
 **・GUIを用いる方法**
 
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic4.png" width="50%" >
+```eval_rst
+.. figure:: image/pic4.png
+    :width: 50%
+```
 
 まずは上の画像のようなVMD main GUIを開いて欲しい。
 
 そして次に**Fileタブ**をクリックする。
 
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic10.png" width="20%" >
+```eval_rst
+.. figure:: image/pic10.png
+    :width: 20%
+```
 
 さらに出てきた項目の中から**Render**をクリックする。
 
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic11.png" width="30%" >
+```eval_rst
+.. figure:: image/pic11.png
+    :width: 30%
+```
 
 このGUIの説明を少ししておく。
 
@@ -67,21 +76,33 @@ $ sudo ndf install ImageMagick
 
 VMDでは標準でGIFを作る機能が備わっているので紹介する。
 
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic4.png" width="50%" >
+```eval_rst
+.. figure:: image/pic11.png
+    :width: 50%
+```
 
 Main GUIの**Extensions**タブをクリックする。
 
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic12.png" width="50%" >
+```eval_rst
+.. figure:: image/pic12.png
+    :width: 50%
+```
 
 さらに**Visualization**をクリックする。
 
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic13.png" width="20%" >
+```eval_rst
+.. figure:: image/pic13.png
+    :width: 20%
+```
 
 そして**Movie Maker**をクリックする。
 
 これにより**Movie Generator** のGUIが表示される。
 
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic14.png" width="30%" >
+```eval_rst
+.. figure:: image/pic14.png
+    :width: 30%
+```
 
 このGUIを用いたGIFの作り方について順番に説明していく。
 
@@ -166,15 +187,24 @@ VMDにはこのTkが搭載されており、Tkコンソールと呼ばれるCUI�
 
 早速Tkコンソールを開いてみよう。
 
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic15.png" width="50%" >
+```eval_rst
+.. figure:: image/pic15.png
+    :width: 50%
+```
 
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic16.png" width="40%" >
+```eval_rst
+.. figure:: image/pic16.png
+    :width: 40%
+```
 
 上記画像のようなウインドウが立ち上がるはずだ。試しに1+1と打ってみよう。
 
 
 
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic17.png" width="40%" >
+```eval_rst
+.. figure:: image/pic17.png
+    :width: 40%
+```
 
 2と返ってくる。プログラミング言語の一種であるため、当然四則演算もできる。
 
@@ -194,7 +224,10 @@ VMDにはこのTkが搭載されており、Tkコンソールと呼ばれるCUI�
 
 まずは水溶液系を切り取るだけの構造作りを行う。この構造作りははっきり言って意味がないが、構造を切り取ることができればある程度思うように構造を作製できるため、ぜひ知識を理解して応用していって欲しい。
 
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic18.png" width="40%" >
+```eval_rst
+.. figure:: image/pic18.png
+    :width: 40%
+```
 
 まず画像のような水の系を用意する。この立方体から小さい立方体を切り出すことにする。ちなみに青色の線は周期境界の箱であり、
 

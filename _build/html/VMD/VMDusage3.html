@@ -182,10 +182,19 @@
 <h3>VMDでの画像保存<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>これまではVMDを使用して分子を可視化することに重点を置いてきた。しかしミーティングや発表などではその可視化した画を見せることもよくある。そのための方法について説明する。</p>
 <p><strong>・GUIを用いる方法</strong></p>
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic4.png" width="50%" ><p>まずは上の画像のようなVMD main GUIを開いて欲しい。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/pic4.png"><img alt="../_images/pic4.png" src="../_images/pic4.png" style="width: 50%;" /></a>
+</div>
+<p>まずは上の画像のようなVMD main GUIを開いて欲しい。</p>
 <p>そして次に<strong>Fileタブ</strong>をクリックする。</p>
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic10.png" width="20%" ><p>さらに出てきた項目の中から<strong>Render</strong>をクリックする。</p>
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic11.png" width="30%" ><p>このGUIの説明を少ししておく。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/pic10.png"><img alt="../_images/pic10.png" src="../_images/pic10.png" style="width: 20%;" /></a>
+</div>
+<p>さらに出てきた項目の中から<strong>Render</strong>をクリックする。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/pic11.png"><img alt="../_images/pic11.png" src="../_images/pic11.png" style="width: 30%;" /></a>
+</div>
+<p>このGUIの説明を少ししておく。</p>
 <p><code class="docutils literal notranslate"><span class="pre">Render</span> <span class="pre">the</span> <span class="pre">current</span> <span class="pre">scene</span> <span class="pre">using</span></code></p>
 <p>分子の写り方を変えることができる。デフォルトは<strong>Snapshot</strong>。筆者はいつもこれで保存している。特に理由がなければこれでいい気もする。T先輩曰く<strong>Tachylon</strong>がおすすめ。影がついて立体的に見えて見栄えがよい。発表用の画像はこれで保存することもある。ただし書き出しに少し時間がかかるため筆者は普段使いはしていない。</p>
 <p><code class="docutils literal notranslate"><span class="pre">Filename</span></code></p>
@@ -208,11 +217,23 @@ $ sudo ndf install ImageMagick
 <h3>VMDでGIFを作る<a class="headerlink" href="#vmdgif" title="このヘッドラインへのパーマリンク">¶</a></h3>
 <p>どうしても静止画では現象を説明しにくい場合がある。しかし動画にするほどではないという時がある。そんな時にはGIFを作るとよい。</p>
 <p>VMDでは標準でGIFを作る機能が備わっているので紹介する。</p>
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic4.png" width="50%" ><p>Main GUIの<strong>Extensions</strong>タブをクリックする。</p>
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic12.png" width="50%" ><p>さらに<strong>Visualization</strong>をクリックする。</p>
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic13.png" width="20%" ><p>そして<strong>Movie Maker</strong>をクリックする。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/pic11.png"><img alt="../_images/pic11.png" src="../_images/pic11.png" style="width: 50%;" /></a>
+</div>
+<p>Main GUIの<strong>Extensions</strong>タブをクリックする。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/pic12.png"><img alt="../_images/pic12.png" src="../_images/pic12.png" style="width: 50%;" /></a>
+</div>
+<p>さらに<strong>Visualization</strong>をクリックする。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/pic13.png"><img alt="../_images/pic13.png" src="../_images/pic13.png" style="width: 20%;" /></a>
+</div>
+<p>そして<strong>Movie Maker</strong>をクリックする。</p>
 <p>これにより<strong>Movie Generator</strong> のGUIが表示される。</p>
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic14.png" width="30%" ><p>このGUIを用いたGIFの作り方について順番に説明していく。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/pic14.png"><img alt="../_images/pic14.png" src="../_images/pic14.png" style="width: 30%;" /></a>
+</div>
+<p>このGUIを用いたGIFの作り方について順番に説明していく。</p>
 <div class="section" id="render">
 <h4>Render<a class="headerlink" href="#render" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>分子の写り方のデザインを変更できる。「VMDでの画像保存」の項目で説明した<code class="docutils literal notranslate"><span class="pre">Render</span> <span class="pre">the</span> <span class="pre">current</span> <span class="pre">scene</span> <span class="pre">using</span></code>と同じである。但し&quot;Tachyon&quot;は綺麗だがGIFの場合はより時間がかかる。そのため時間がない場合は&quot;Snapshot&quot;をお勧めする。</p>
@@ -268,8 +289,17 @@ $ sudo ndf install ImageMagick
 <p>Tclは1988年にJohn K. Ousterhout博士によって開発されたプログラミング言語の１種である。そしてTkはそのTcl言語を用いたGUI作成用ツールキットである。Tclは「ティーシーエル」と呼んでもいいが、通称は「ティクル」である。
 VMDにはこのTkが搭載されており、Tkコンソールと呼ばれるCUIでTcl言語を使用できる。VMDのコマンドと言われるものはTclによって作られたいわば関数であり、これらもTkコンソールで使用できる。</p>
 <p>早速Tkコンソールを開いてみよう。</p>
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic15.png" width="50%" ><img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic16.png" width="40%" ><p>上記画像のようなウインドウが立ち上がるはずだ。試しに1+1と打ってみよう。</p>
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic17.png" width="40%" ><p>2と返ってくる。プログラミング言語の一種であるため、当然四則演算もできる。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/pic15.png"><img alt="../_images/pic15.png" src="../_images/pic15.png" style="width: 50%;" /></a>
+</div>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/pic16.png"><img alt="../_images/pic16.png" src="../_images/pic16.png" style="width: 40%;" /></a>
+</div>
+<p>上記画像のようなウインドウが立ち上がるはずだ。試しに1+1と打ってみよう。</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/pic17.png"><img alt="../_images/pic17.png" src="../_images/pic17.png" style="width: 40%;" /></a>
+</div>
+<p>2と返ってくる。プログラミング言語の一種であるため、当然四則演算もできる。</p>
 <p>ただしTclはシンプルなプログラミング言語であり、解析用のスクリプトなどは当たり前だがC++やPythonで組むべきである。</p>
 <p>そんな役に立たないプログラミング言語を1から学ぶのは面倒だと思うかもしれないが、Tclをマスターとまでは行かなくても、VMDのコマンドを使えるようにする、for文, if文の構造制御を使えるようにする、だけでも十分活用できる。さらに関数を定義してオリジナルのスクリプトを組めると尚良いが。</p>
 <p>ここではTcl言語の基本について1から教える訳ではない。VMDのコマンドを中心として、必要最低限の知識を説明する。</p>
@@ -278,7 +308,10 @@ VMDにはこのTkが搭載されており、Tkコンソールと呼ばれるCUI�
 <h4>初期構造を作る<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h4>
 <p>筆者は初期構造の作成のためにTclを使うことが大半である。そのためここでは簡単な初期構造の作製を例に説明しながら、VMDのコマンドについても紹介していく。</p>
 <p>まずは水溶液系を切り取るだけの構造作りを行う。この構造作りははっきり言って意味がないが、構造を切り取ることができればある程度思うように構造を作製できるため、ぜひ知識を理解して応用していって欲しい。</p>
-<img src="C:\Users\kawabata\Documents\GITHUB\SOURCE\source\VMD\image\pic18.png" width="40%" ><p>まず画像のような水の系を用意する。この立方体から小さい立方体を切り出すことにする。ちなみに青色の線は周期境界の箱であり、</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../_images/pic18.png"><img alt="../_images/pic18.png" src="../_images/pic18.png" style="width: 40%;" /></a>
+</div>
+<p>まず画像のような水の系を用意する。この立方体から小さい立方体を切り出すことにする。ちなみに青色の線は周期境界の箱であり、</p>
 <p>コマンドで以下のように入力すれば表示できる。</p>
 <div class="highlight-tcl notranslate"><div class="highlight"><pre><span></span><span class="o">%</span>  <span class="nv">pbc</span> box
 </pre></div>
