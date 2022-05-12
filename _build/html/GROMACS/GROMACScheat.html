@@ -197,8 +197,8 @@
 <h2>計算準備編<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="ndx">
 <h3>ndxファイルを作る<a class="headerlink" href="#ndx" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">make_ndx</span> <span class="pre">-f</span> <span class="pre">initial.gro</span> <span class="pre">-o</span> <span class="pre">index.ndx</span></code>
-この時コマンド内でもグループを作る方法が色々ある。
+<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">make_ndx</span> <span class="pre">-f</span> <span class="pre">initial.gro</span> <span class="pre">-o</span> <span class="pre">index.ndx</span></code></p>
+<p>この時コマンド内でもグループを作る方法が色々ある。
 例を載せておく。
 「a P」とすることで、全ての&quot;P&quot;という原子を選択できる。
 「1 | 2 | 3」とすることで、グループ1または2または3に含まれている原子が選択できる。
@@ -210,15 +210,15 @@
 </div>
 <div class="section" id="gropdb">
 <h3>系を複製したいとき(groファイルだけでなくpdbファイルも可)<a class="headerlink" href="#gropdb" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">genconf</span> <span class="pre">-f</span> <span class="pre">input.gro</span> <span class="pre">-o</span> <span class="pre">double.gro</span> <span class="pre">-nbox</span> <span class="pre">2</span> <span class="pre">1</span> <span class="pre">1</span></code>
-これで系をx軸方向に2倍、y,z軸方向に1倍ずつ、つまり元の系を2倍に複製できる。
+<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">genconf</span> <span class="pre">-f</span> <span class="pre">input.gro</span> <span class="pre">-o</span> <span class="pre">double.gro</span> <span class="pre">-nbox</span> <span class="pre">2</span> <span class="pre">1</span> <span class="pre">1</span></code></p>
+<p>これで系をx軸方向に2倍、y,z軸方向に1倍ずつ、つまり元の系を2倍に複製できる。
 pdbでもできるらしいので便利。
 これ周期境界設定していないと同じ位置に重なってうまく複製できないので注意！！！！！！！！</p>
 </div>
 <div class="section" id="gro">
 <h3>groファイルの残基番号を修正したいとき<a class="headerlink" href="#gro" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">editconf</span> <span class="pre">-f</span> <span class="pre">initial.gro</span> <span class="pre">-o</span> <span class="pre">number.gro</span> <span class="pre">-resnr</span> <span class="pre">1</span></code>
--resnrは何番から付け直すかを指定できる。</p>
+<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">editconf</span> <span class="pre">-f</span> <span class="pre">initial.gro</span> <span class="pre">-o</span> <span class="pre">number.gro</span> <span class="pre">-resnr</span> <span class="pre">1</span></code></p>
+<p>-resnrは何番から付け直すかを指定できる。</p>
 <p>但しうまく直らない場合もあるのでその都度生成したファイルの中身を確認すること。</p>
 </div>
 </div>
@@ -226,14 +226,14 @@ pdbでもできるらしいので便利。
 <h2>計算編<a class="headerlink" href="#id2" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="id3">
 <h3>速度テストしたいとき<a class="headerlink" href="#id3" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">mdrun</span> <span class="pre">-deffnm</span> <span class="pre">npt</span> <span class="pre">-nsteps</span> <span class="pre">1000</span></code>
-とすると、強制的に1000stepで終了できる。
+<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">mdrun</span> <span class="pre">-deffnm</span> <span class="pre">npt</span> <span class="pre">-nsteps</span> <span class="pre">1000</span></code></p>
+<p>とすると、強制的に1000stepで終了できる。
 いちいち.mdpファイルを編集しなくていいから助かる。</p>
 </div>
 <div class="section" id="run">
 <h3>途中で終了してしまったrunの再開<a class="headerlink" href="#run" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">mdrun</span> <span class="pre">-deffnm</span> <span class="pre">npt</span> <span class="pre">-cpi</span> <span class="pre">npt.cpt</span></code>
-npt.cptはチェックポイントファイルでありMD計算の一定間隔で状態を記録・updateしている。
+<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">mdrun</span> <span class="pre">-deffnm</span> <span class="pre">npt</span> <span class="pre">-cpi</span> <span class="pre">npt.cpt</span></code></p>
+<p>npt.cptはチェックポイントファイルでありMD計算の一定間隔で状態を記録・updateしている。
 そのためこれを使ってリスタートすると、このチェックポイントファイルの状態からスタートする。
 ちなみに<code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">check</span> <span class="pre">-f</span> <span class="pre">npt.cpt</span></code>でどのステップのものか確認できるらしい！
 便利すぎる...
@@ -244,8 +244,8 @@ npt.cptはチェックポイントファイルでありMD計算の一定間隔�
 <h2>解析準備編<a class="headerlink" href="#id4" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="id5">
 <h3>周期境界条件を直す<a class="headerlink" href="#id5" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">trjconv</span> <span class="pre">-s</span> <span class="pre">npt.tpr</span> <span class="pre">-f</span> <span class="pre">npt.xtc</span> <span class="pre">-o</span> <span class="pre">npt_noPBC.xtc</span> <span class="pre">-pbc</span> <span class="pre">mol</span></code>
-必要に応じて-centerオプションを使う。</p>
+<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">trjconv</span> <span class="pre">-s</span> <span class="pre">npt.tpr</span> <span class="pre">-f</span> <span class="pre">npt.xtc</span> <span class="pre">-o</span> <span class="pre">npt_noPBC.xtc</span> <span class="pre">-pbc</span> <span class="pre">mol</span></code></p>
+<p>必要に応じて-centerオプションを使う。</p>
 </div>
 <div class="section" id="id6">
 <h3>トラジェクトリのフレームを落とす<a class="headerlink" href="#id6" title="このヘッドラインへのパーマリンク">¶</a></h3>
@@ -266,8 +266,8 @@ npt.cptはチェックポイントファイルでありMD計算の一定間隔�
 <h2>解析編<a class="headerlink" href="#id8" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <div class="section" id="id9">
 <h3>系の物理量を調べる<a class="headerlink" href="#id9" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">energy</span> <span class="pre">-f</span> <span class="pre">npt.edr</span> <span class="pre">-o</span> <span class="pre">pressure.xvg</span></code>
-例えばこのコマンドを実行した後に18 0(バージョンによってナンバー違う)を入力すると時間に対しての圧力が出力できる。
+<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">energy</span> <span class="pre">-f</span> <span class="pre">npt.edr</span> <span class="pre">-o</span> <span class="pre">pressure.xvg</span></code></p>
+<p>例えばこのコマンドを実行した後に18 0(バージョンによってナンバー違う)を入力すると時間に対しての圧力が出力できる。
 圧力のみならず、温度、密度、ポテンシャルエネルギー、系の全ての合計のエネルギー(total energy)、さらには熱浴も込みでの合計のエネルギー(conserved energy)、ボックスのz軸方向の長さなども調べれてしまう。
 このコマンドはやばい。
 あと拘束のエネルギー(restraint potential)も調べれるはずだけど、特に距離に関してはbondsで拘束していたのでこのコマンドで調べれなかった。
@@ -286,16 +286,16 @@ distant restraintを使っていたらこれで調べれていたかもしれな
 </div>
 <div class="section" id="id11">
 <h3>動径分布を調べる<a class="headerlink" href="#id11" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">rdf</span> <span class="pre">-f</span> <span class="pre">npt.xtc</span> <span class="pre">-s</span> <span class="pre">npt.tpr</span> <span class="pre">-n</span> <span class="pre">rdf.ndx</span> <span class="pre">-o</span> <span class="pre">rdf.xvg</span></code>
-ちなみに-exclオプションを使うと、結合している原子同士のrdfを考えなくなるっぽい。つまりOH2をrefにしてH1とH2をselにすると
+<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">rdf</span> <span class="pre">-f</span> <span class="pre">npt.xtc</span> <span class="pre">-s</span> <span class="pre">npt.tpr</span> <span class="pre">-n</span> <span class="pre">rdf.ndx</span> <span class="pre">-o</span> <span class="pre">rdf.xvg</span></code></p>
+<p>ちなみに-exclオプションを使うと、結合している原子同士のrdfを考えなくなるっぽい。つまりOH2をrefにしてH1とH2をselにすると
 何のピークもない結果が得られるらしい。
 計算時間が少なくて短いからか、ネットのやつとは一致しなかったけど多分使用の仕方は問題なさそう。</p>
 <p>但しgroファイルを使ってrdfを求めようとすると、原子の質量や原子半径が分からないために残基や原子名から推測して使用されるらしい。
 これはlammpsで粗視化計算したものを無理やりgroにした場合にはこの方法は使えないということ。またトラジェクトリに結合が変になってるやつがあるとまずいって。そうなるとやっぱりlammpsはlammpsでrdf求める必要がある。</p>
 <p>追記: 質量に関してはpSPICAでもpsfファイルに書いてあるから問題ない。但しlammpsだと不便すぎるのでMPDynを使うことにした。
 また細かいオプションについても理解したので記しておく。</p>
-<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">rdf</span> <span class="pre">-f</span> <span class="pre">npt.xtc</span> <span class="pre">-s</span> <span class="pre">npt.tpr</span> <span class="pre">-o</span> <span class="pre">rdf.xvg</span> <span class="pre">-n</span> <span class="pre">rdf.ndx</span> <span class="pre">-rmax</span> <span class="pre">8</span> <span class="pre">-bin</span> <span class="pre">0.1</span></code>
--rmaxはrdfをどの程度の距離まで測るか。この場合は8 nmまで測り、またその測る刻みを0.1 nmにするということ。</p>
+<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">rdf</span> <span class="pre">-f</span> <span class="pre">npt.xtc</span> <span class="pre">-s</span> <span class="pre">npt.tpr</span> <span class="pre">-o</span> <span class="pre">rdf.xvg</span> <span class="pre">-n</span> <span class="pre">rdf.ndx</span> <span class="pre">-rmax</span> <span class="pre">8</span> <span class="pre">-bin</span> <span class="pre">0.1</span></code></p>
+<p>-rmaxはrdfをどの程度の距離まで測るか。この場合は8 nmまで測り、またその測る刻みを0.1 nmにするということ。</p>
 </div>
 <div class="section" id="id12">
 <h3>二次元密度マップを調べる<a class="headerlink" href="#id12" title="このヘッドラインへのパーマリンク">¶</a></h3>
@@ -356,8 +356,8 @@ distant restraintを使っていたらこれで調べれていたかもしれな
 </div>
 <div class="section" id="id14">
 <h3>４つの原子からなる二面角を調べる<a class="headerlink" href="#id14" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">angle</span> <span class="pre">-f</span> <span class="pre">step6.1_equilibration.xtc</span> <span class="pre">-n</span> <span class="pre">dihedral.ndx</span> <span class="pre">-all</span> <span class="pre">-type</span> <span class="pre">dihedral</span> <span class="pre">-ov</span> <span class="pre">dihedraltest.xvg</span></code>
--f は入力ファイル、-nは4つの原子を指定するために必要なインデックスファイル、-allは(そのグループの？)平均値と別に個々の二面角を出してくれるらしいけど、今は４つの原子しかないから(４つの原子を１グループに.ndxでしている)同じ値が２列表示されてる。
+<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">angle</span> <span class="pre">-f</span> <span class="pre">step6.1_equilibration.xtc</span> <span class="pre">-n</span> <span class="pre">dihedral.ndx</span> <span class="pre">-all</span> <span class="pre">-type</span> <span class="pre">dihedral</span> <span class="pre">-ov</span> <span class="pre">dihedraltest.xvg</span></code></p>
+<p>-f は入力ファイル、-nは4つの原子を指定するために必要なインデックスファイル、-allは(そのグループの？)平均値と別に個々の二面角を出してくれるらしいけど、今は４つの原子しかないから(４つの原子を１グループに.ndxでしている)同じ値が２列表示されてる。
 -allオプション外すと一列しか表示されなかった。
 -typeでどういう角度を調べるかを変えれる！これがないとデフォルトで結合角になるらしく、４つの原子をインデックスで指定してても３つの原子がないとか言われる。
 なので-type dihedralとする必要がある。
@@ -366,8 +366,8 @@ distant restraintを使っていたらこれで調べれていたかもしれな
 </div>
 <div class="section" id="id15">
 <h3>２つの原子の距離を調べる<a class="headerlink" href="#id15" title="このヘッドラインへのパーマリンク">¶</a></h3>
-<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">distance</span> <span class="pre">-f</span> <span class="pre">step6.6_equilibration.xtc</span> <span class="pre">-n</span> <span class="pre">distance.ndx</span> <span class="pre">-oav</span> <span class="pre">distave.xvg</span></code>　(ndxで見たいものを別々のグループに記述する必要があるらしい)でいけるはず。
-このコマンド結局使ったかどうか忘れたからちょっと怪しいかもしれない。</p>
+<p><code class="docutils literal notranslate"><span class="pre">gmx</span> <span class="pre">distance</span> <span class="pre">-f</span> <span class="pre">step6.6_equilibration.xtc</span> <span class="pre">-n</span> <span class="pre">distance.ndx</span> <span class="pre">-oav</span> <span class="pre">distave.xvg</span></code>　(ndxで見たいものを別々のグループに記述する必要があるらしい)でいけるはず。</p>
+<p>このコマンド結局使ったかどうか忘れたからちょっと怪しいかもしれない。</p>
 </div>
 </div>
 </div>
