@@ -14,7 +14,9 @@ Welcome to bros.'s documentation!
    /GROMACS/GROMACSindex1.rst
    /GROMACS/GROMACSindex2.rst
    /GROMACS/GROMACSmdp.md
+   /GROMACS/GROMACScheat.md
    /SPHINX/sphinxindex.rst
    /GIT/gitindex.rst
    /VMD/VMDindex.rst
+   /VMD/VMDcheat.md
    
