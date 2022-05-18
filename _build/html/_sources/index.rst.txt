@@ -19,4 +19,5 @@ Welcome to bros.'s documentation!
    /GIT/gitindex.rst
    /VMD/VMDindex.rst
    /VMD/VMDcheat.md
+   /GNUPLOT/GNUPLOTusage.md
    
