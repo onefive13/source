@@ -30,7 +30,7 @@ $ vmd hoge.pdb md1.xtc md2.xtc
 
 ```eval_rst
 .. figure:: image/pic3.png
-    :width: 70%
+    :width: 50%
 ```
 
 
@@ -41,7 +41,7 @@ $ vmd hoge.pdb md1.xtc md2.xtc
 
 ```eval_rst
 .. figure:: image/pic7.png
-    :width: 80%
+    :width: 50%
 ```
 
 「1」キーを押すとDisplay GUI上でのカーソルの形が変わる。その状態で原子をクリックすると上の画像のように選択原子の"resname"と"resid"及び"name"が表示される。さらに後ろのターミナルに注目してほしい。ターミナルにはindexやchain、またx,y,z座標といったさらに詳しい情報が表示される。
@@ -52,7 +52,7 @@ $ vmd hoge.pdb md1.xtc md2.xtc
 
 ```eval_rst
 .. figure:: image/pic8.png
-    :width: 40%
+    :width: 20%
 ```
 
 ここにもターミナルに表示されている情報が全く同様に表示される。同じならターミナルで見ればいいという人もいるかもしれないがこのGUIを表示するメリットは他にもある。
@@ -69,7 +69,7 @@ $ vmd hoge.pdb md1.xtc md2.xtc
 
 ```eval_rst
 .. figure:: image/pic9.png
-    :width: 40%
+    :width: 20%
 ```
 
 

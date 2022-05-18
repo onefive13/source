@@ -41,7 +41,7 @@ VMD installation complete.  Enjoy!
 
 ```eval_rst
 .. figure:: image/pic1.png
-    :width: 70%
+    :width: 50%
 ```
 
 ## VMD初級編
@@ -50,7 +50,7 @@ VMD installation complete.  Enjoy!
 
 ```eval_rst
 .. figure:: image/pic2.png
-    :width: 50%
+    :width: 30%
 ```
 
 このGUIは基本的にトラジェクトリの再生に使用する。分子を読み込んでいれば読み込んだ構造ファイルが表示される。試しに読み込んでみよう。読み込み方は2通りある。
@@ -64,11 +64,11 @@ VMD installation complete.  Enjoy!
 
 ```eval_rst
 .. figure:: image/pic3.png
-    :width: 70%
+    :width: 50%
 ```
 ```eval_rst
 .. figure:: image/pic4.png
-    :width: 50%
+    :width: 30%
 ```
 
 さて読み込むと"VMD Main"のGUIが変化した。
@@ -83,7 +83,7 @@ VMD installation complete.  Enjoy!
 
 ```eval_rst
 .. figure:: image/pic5.png
-    :width: 30%
+    :width: 10%
 ```
 
 この"Graphical Representations"のGUIはVMDを触る上でマスターすべき最初の難関である。慣れてしまえばなんてことはないが、初めはこのGUIの見方が分からない。そのため使い方を解説していく。
@@ -151,7 +151,7 @@ VMD installation complete.  Enjoy!
 
 ```eval_rst
 .. figure:: image/pic6.png
-    :width: 30%
+    :width: 10%
 ```
 
 

@@ -112,6 +112,7 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="VMDcheat.html">VMDチートシート(自分用)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../GNUPLOT/GNUPLOTusage.html">gnuplotの使い方</a></li>
 </ul>
 
             
@@ -214,14 +215,14 @@ VMD installation complete.  Enjoy!
 </div>
 <p>上記の結果次のようなGUIが立ち上がればインストールは無事終了である。</p>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/pic1.png"><img alt="../_images/pic1.png" src="../_images/pic1.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../_images/pic1.png"><img alt="../_images/pic1.png" src="../_images/pic1.png" style="width: 50%;" /></a>
 </div>
 </div>
 <div class="section" id="id1">
 <h2>VMD初級編<a class="headerlink" href="#id1" title="このヘッドラインへのパーマリンク">¶</a></h2>
 <p><code class="docutils literal notranslate"><span class="pre">vmd</span></code>を実行すると上記の画像と共に下のようなGUIが表示されているはずだ。</p>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/pic2.png"><img alt="../_images/pic2.png" src="../_images/pic2.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../_images/pic2.png"><img alt="../_images/pic2.png" src="../_images/pic2.png" style="width: 30%;" /></a>
 </div>
 <p>このGUIは基本的にトラジェクトリの再生に使用する。分子を読み込んでいれば読み込んだ構造ファイルが表示される。試しに読み込んでみよう。読み込み方は2通りある。</p>
 <ol class="simple">
@@ -231,10 +232,10 @@ VMD installation complete.  Enjoy!
 <p>1の方法の方が圧倒的に早く楽なため、基本的にこちらのやり方でロードするのが普通である。</p>
 <p>読み込むと以下のようになる。筆者はタンパク質を読み込んだ。</p>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/pic3.png"><img alt="../_images/pic3.png" src="../_images/pic3.png" style="width: 70%;" /></a>
+<a class="reference internal image-reference" href="../_images/pic3.png"><img alt="../_images/pic3.png" src="../_images/pic3.png" style="width: 50%;" /></a>
 </div>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/pic4.png"><img alt="../_images/pic4.png" src="../_images/pic4.png" style="width: 50%;" /></a>
+<a class="reference internal image-reference" href="../_images/pic4.png"><img alt="../_images/pic4.png" src="../_images/pic4.png" style="width: 30%;" /></a>
 </div>
 <p>さて読み込むと&quot;VMD Main&quot;のGUIが変化した。</p>
 <p>&quot;Molecule&quot;のところには読み込んだ構造ファイルの名前が記されている。</p>
@@ -242,7 +243,7 @@ VMD installation complete.  Enjoy!
 <p>&quot;Frames&quot;はその名の通り何フレーム読み込んでいるかを表す。現在は構造ファイルの静止画を1つ読み込んだだけであるので1と表示されているが、トラジェクトリを読み込む場合はそのトラジェクトリのフレーム分の数値が表示される。</p>
 <p>しかしこれだけではただ線が表示されているだけであり、はっきり言って見にくい。そのためグラフィックを変更して自分の見やすいように調整してみよう。グラフィックを変更する場合は<strong>Graphicsタブ</strong>を押す。すると次のようなGUIが出現する。</p>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/pic5.png"><img alt="../_images/pic5.png" src="../_images/pic5.png" style="width: 30%;" /></a>
+<a class="reference internal image-reference" href="../_images/pic5.png"><img alt="../_images/pic5.png" src="../_images/pic5.png" style="width: 10%;" /></a>
 </div>
 <p>この&quot;Graphical Representations&quot;のGUIはVMDを触る上でマスターすべき最初の難関である。慣れてしまえばなんてことはないが、初めはこのGUIの見方が分からない。そのため使い方を解説していく。</p>
 <div class="section" id="rep">
@@ -284,7 +285,7 @@ VMD installation complete.  Enjoy!
 <p>※注意 lipidとしても表示されない脂質種もある。例えばPOPEは表示されるがPOPGは表示されないので注意が必要である。ionなどのキーワードにも同様に当てはまる。</p>
 <p>他にも多数のキーワードがあり、どんなキーワードがあるか知りたい場合は<strong>Selections</strong>のタブを押して”Singlewords”の一覧を見るとよい。</p>
 <div class="figure align-default">
-<a class="reference internal image-reference" href="../_images/pic6.png"><img alt="../_images/pic6.png" src="../_images/pic6.png" style="width: 30%;" /></a>
+<a class="reference internal image-reference" href="../_images/pic6.png"><img alt="../_images/pic6.png" src="../_images/pic6.png" style="width: 10%;" /></a>
 </div>
 <p>キーワードには先に述べたものとは別に、キーワードと番号や名前を組み合わせて指定するものもある。これは画像下部の&quot;Keyword&quot;の一覧に表示されているものがそうである。具体的な一例を以下に挙げておく。</p>
 <ul class="simple">

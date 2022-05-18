@@ -14,7 +14,7 @@
 
 ```eval_rst
 .. figure:: image/pic4.png
-    :width: 50%
+    :width: 30%
 ```
 
 まずは上の画像のようなVMD main GUIを開いて欲しい。
@@ -23,14 +23,14 @@
 
 ```eval_rst
 .. figure:: image/pic10.png
-    :width: 20%
+    :width: 10%
 ```
 
 さらに出てきた項目の中から**Render**をクリックする。
 
 ```eval_rst
 .. figure:: image/pic11.png
-    :width: 30%
+    :width: 10%
 ```
 
 このGUIの説明を少ししておく。
@@ -78,21 +78,21 @@ VMDでは標準でGIFを作る機能が備わっているので紹介する。
 
 ```eval_rst
 .. figure:: image/pic11.png
-    :width: 50%
+    :width: 30%
 ```
 
 Main GUIの**Extensions**タブをクリックする。
 
 ```eval_rst
 .. figure:: image/pic12.png
-    :width: 50%
+    :width: 30%
 ```
 
 さらに**Visualization**をクリックする。
 
 ```eval_rst
 .. figure:: image/pic13.png
-    :width: 20%
+    :width: 10%
 ```
 
 そして**Movie Maker**をクリックする。
@@ -101,7 +101,7 @@ Main GUIの**Extensions**タブをクリックする。
 
 ```eval_rst
 .. figure:: image/pic14.png
-    :width: 30%
+    :width: 10%
 ```
 
 このGUIを用いたGIFの作り方について順番に説明していく。
@@ -189,12 +189,12 @@ VMDにはこのTkが搭載されており、Tkコンソールと呼ばれるCUI�
 
 ```eval_rst
 .. figure:: image/pic15.png
-    :width: 50%
+    :width: 30%
 ```
 
 ```eval_rst
 .. figure:: image/pic16.png
-    :width: 40%
+    :width: 20%
 ```
 
 上記画像のようなウインドウが立ち上がるはずだ。試しに1+1と打ってみよう。
@@ -203,7 +203,7 @@ VMDにはこのTkが搭載されており、Tkコンソールと呼ばれるCUI�
 
 ```eval_rst
 .. figure:: image/pic17.png
-    :width: 40%
+    :width: 20%
 ```
 
 2と返ってくる。プログラミング言語の一種であるため、当然四則演算もできる。
@@ -226,7 +226,7 @@ VMDにはこのTkが搭載されており、Tkコンソールと呼ばれるCUI�
 
 ```eval_rst
 .. figure:: image/pic18.png
-    :width: 40%
+    :width: 20%
 ```
 
 まず画像のような水の系を用意する。この立方体から小さい立方体を切り出すことにする。ちなみに青色の線は周期境界の箱であり、
