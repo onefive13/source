@@ -19,7 +19,7 @@ import sphinx_rtd_theme
 # -- Project information -----------------------------------------------------
 
 project = 'MDnotes'
-copyright = '2021, S.Harada,I.Kawabata,S.Ikeda,K.Shibata'
+copyright = '2022, I.Kawabata, S.Yoshida S.Harada, H.Tanaka'
 author = 'ikawabata'
 
 
@@ -56,6 +56,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 #
 #html_theme = 'alabaster'
 html_theme = 'sphinx_rtd_theme'
+html_logo = 'MDnoteslogo.jfif'
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
